@@ -1,1 +1,1 @@
-export * from './helpers/setCssVariables'
+export * from './helpers/getCssVariables'

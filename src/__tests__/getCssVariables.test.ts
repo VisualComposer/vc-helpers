@@ -1,13 +1,13 @@
-import { setCssVariables } from '../helpers/setCssVariables'
+import { getCssVariables } from '../helpers/getCssVariables'
 
-describe('check setCssVariables', () => {
+describe('check getCssVariables', () => {
   test('should match a valid UUID', () => {
     const cssVars = {
       color: 'red',
       background: 'green',
       innerBackground: '' // should not include this key/value into object as it is empty
     }
-    const styles = setCssVariables(cssVars)
+    const styles = getCssVariables(cssVars)
     expect(styles).toStrictEqual({ '--color': 'red', '--background': 'green' })
   })
 })

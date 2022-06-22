@@ -2,7 +2,7 @@ interface StringMap {
   [key: string]: string;
 }
 
-export function setCssVariables (cssVars: StringMap) {
+export function getCssVariables (cssVars: StringMap) {
   const newObj: StringMap = {}
   Object.keys(cssVars).forEach((key) => {
     if (cssVars[key]) {
